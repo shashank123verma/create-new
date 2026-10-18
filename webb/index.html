@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 { color: #38bdf8; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    nav a:hover { color: #38bdf8; }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 { font-size: 42px; }
+    .hero span { color: #38bdf8; }
+
+    .hero p {
+      max-width: 600px;
+      margin: 15px auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 22px;
+      margin-top: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    section h2 {
+      color: #1d4ed8;
+      margin-bottom: 20px;
+    }
+
+    .details, .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px #0f172a12;
+    }
+
+    .card h3 { margin-bottom: 10px; }
+
+    .skill {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #contact a { color: #1d4ed8; }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { text-align: center; }
+      nav a { margin: 6px; display: inline-block; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>MyPortfolio</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#qualification">Qualifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hello, I'm <span>Shashank verma</span></h1>
+    <h3>Aspiring Web Developer</h3>
+    <p>
+      I build attractive and responsive websites using
+      HTML, CSS, and JavaScript.
+    </p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a motivated student interested in web development.
+        I enjoy learning new technologies and creating websites
+        that are simple, useful, and user-friendly.
+      </p>
+    </div>
+  </section>
+
+  <section id="qualification">
+    <h2>Personal Details & Qualifications</h2>
+    <div class="details">
+      <div class="card">
+        <h3>Personal Information</h3>
+        <p><b>Name:</b> Your Name</p>
+        <p><b>DOB:</b> DD/MM/YYYY</p>
+        <p><b>City:</b> Your City</p>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p><b>Qualification:</b> Your Degree/Class</p>
+        <p><b>College/School:</b> Institution Name</p>
+        <p><b>Year:</b> Graduation Year</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A website to display my profile, education, and skills.</p>
+        <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Calculator</h3>
+        <p>A simple calculator for basic mathematical operations.</p>
+        <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Website of college</h3>
+        <p>A simple website of frontend.</p>
+        <p><b>Technologies:</b> React js</p>
+      </div>
+      <div class="card">
+        <h3>Website of Resturant</h3>
+        <p>A simple website of frontend. with multipages</p>
+        <p><b>Technologies:</b> React js</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: your.email@example.com</p>
+      <p>Phone: Your Phone Number</p>
+      <button class="btn" onclick="showMessage()">
+        Say Hello
+      </button>
+      <p id="message" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Thank you for visiting my portfolio!";
+    }
+  </script>
+
+</body>
+</html>
